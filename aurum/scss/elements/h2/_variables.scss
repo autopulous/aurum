@@ -1,0 +1,21 @@
+@import "../h1/_variables";
+@import "../../variables/_font";
+@import "../../variables/_text";
+
+$h2-display: block !default;
+
+$h2-top-padding: $text-top-padding !default;
+$h2-left-padding: $text-left-padding !default;
+$h2-bottom-padding: $text-bottom-padding !default;
+$h2-right-padding: $text-right-padding !default;
+$h2-padding: $h2-top-padding $h2-left-padding $h2-bottom-padding $h2-right-padding !default;
+
+$h2-top-margin: $text-top-margin !default;
+$h2-left-margin: $text-left-margin !default;
+$h2-bottom-margin: $text-bottom-margin !default;
+$h2-right-margin: $text-right-margin !default;
+$h2-margin: $h2-top-margin $h2-left-margin $h2-bottom-margin $h2-right-margin !default;
+
+$h2-font-size: $font-2-size !default;
+$h2-font-weight: normal !default;
+$h2-line-height: normal !default;

@@ -1,0 +1,20 @@
+@import "../../variables/font";
+@import "../body/variables";
+
+$html-font-size: $font-size !default;
+$html-font-family: $font-family !default;
+
+$html-width: $body-width !default;
+$html-height: $body-height !default;
+
+$html-margin-top: $body-margin-top !default;
+$html-margin-right: $body-margin-right !default;
+$html-margin-bottom: $body-margin-bottom !default;
+$html-margin-left: $body-margin-left !default;
+$html-margin: $html-margin-top $html-margin-right $html-margin-bottom $html-margin-left !default;
+
+$html-padding-top: $body-padding-top !default;
+$html-padding-right: $body-padding-right !default;
+$html-padding-bottom: $body-padding-bottom !default;
+$html-padding-left: $body-padding-left !default;
+$html-padding: $html-padding-top $html-padding-right $html-padding-bottom $html-padding-left !default;

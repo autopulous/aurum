@@ -1,0 +1,20 @@
+@import "../../variables/_font";
+@import "../../variables/_text";
+
+$label-font-weight: 500 !default;
+$label-font-size: $font-6-size !default;
+
+$label-top-padding: $text-top-padding !default;
+$label-left-padding: $text-left-padding !default;
+$label-bottom-padding: $text-bottom-padding !default;
+$label-right-padding: $text-right-padding !default;
+$label-padding: $label-top-padding $label-left-padding $label-bottom-padding $label-right-padding !default;
+
+$label-top-margin: $text-top-margin !default;
+$label-left-margin: $text-left-margin !default;
+$label-bottom-margin: $text-bottom-margin !default;
+$label-right-margin: $text-right-margin !default;
+$label-margin: $label-top-margin $label-left-margin $label-bottom-margin $label-right-margin !default;
+
+$label-display: inline-block !default;
+$label-text-transform: capitalize !default;

@@ -1,0 +1,43 @@
+@import "../../variables/palette/_accent";
+@import "../../variables/palette/_brand.primary";
+@import "../../variables/palette/_brand.secondary";
+@import "../../variables/palette/_grayscale";
+@import "../../variables/_duration";
+@import "../../variables/_font";
+
+$button-text-font-size: $font-6-size !default;
+$button-menu-font-weight: 700 !default;
+$button-height: $button-text-font-size * 3 !default;
+
+$button-margin-top: 0 !default;
+$button-margin-right: 0 !default;
+$button-margin-bottom: 0 !default;
+$button-margin-left: 0 !default;
+$button-margin: $button-margin-top $button-margin-right $button-margin-bottom $button-margin-left !default;
+
+$button-padding-horizontal: $button-text-font-size * 1.4 !default;
+
+$button-padding-top: 0 !default;
+$button-padding-right: $button-padding-horizontal !default;
+$button-padding-bottom: 0 !default;
+$button-padding-left: $button-padding-horizontal !default;
+$button-padding: $button-padding-top $button-padding-right $button-padding-bottom $button-padding-left !default;
+
+$button-box-shadow-transition: box-shadow $duration-medium !default;
+$button-background-transition: background-color $duration-medium !default
+
+$button-button-transition: $button-box-shadow-transition !default;
+$button-action-transition: $button-background-transition !default;
+
+$button-raised-background-color: $brand-secondary;
+$button-raised-dangerous-background-color: $accent-warning !default;
+$button-flat-color: $brand-primary;
+$button-flat-background-color: transparent !default;
+$button-action-background-color: $white !default;
+$button-dropdown-background-color: transparent !default;
+$button-toolbar-background-color: transparent !default;
+$button-navigation-background-color: transparent !default;
+
+$button-panel-transition: $button-background-transition !default;
+$button-panel-background-color: transparent !default;
+$button-panel-focus-background-color: $gray-lightest !default;
