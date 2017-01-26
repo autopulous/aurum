@@ -1,0 +1,45 @@
+// set on the <html> element to establish the base font attributes of the application
+
+$font-size: 14px !default;
+$font-family: 'Gotham SSm A', 'Gotham SSm B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// used as the basis for h1, h2, h3, h4, h5, h6, and for font margin and padding
+
+// $font-6 (and all descendants of $font-6) are size "medium" with a value of 1rem
+// which is equal to the document font-size: as defined by the root <html> element
+
+$font-000000-size: 2.94rem !default;
+$font-00000-size: 2.80rem !default;
+$font-0000-size: 2.66rem !default;
+$font-000-size: 2.52rem !default;
+$font-00-size: 2.38rem !default;
+$font-0-size: 2.24rem !default;
+$font-1-size: 2.20rem !default; // h1
+$font-2-size: 1.96rem !default; // h2
+$font-3-size: 1.72rem !default; // h3
+$font-4-size: 1.48rem !default; // h4
+$font-5-size: 1.24rem !default; // h5
+$font-6-size: 1.00rem !default; // h6 - relative to the font size of the <html> element
+$font-7-size: .833333rem !default;
+$font-8-size: .666666rem !default;
+$font-9-size: .5rem !default;
+
+$font-1-margin-size: .75rem !default; // h1
+$font-2-margin-size: .65rem !default; // h2
+$font-3-margin-size: .55rem !default; // h3
+$font-4-margin-size: .45rem !default; // h4
+$font-5-margin-size: .35rem !default; // h5
+$font-6-margin-size: .25rem !default; // h6
+$font-7-margin-size: .208333rem !default;
+$font-8-margin-size: .166666rem !default;
+$font-9-margin-size: .125rem !default;
+
+$font-1-line-height: 3.75rem !default; // h1
+$font-2-line-height: 3.25rem !default; // h2
+$font-3-line-height: 2.75rem !default; // h3
+$font-4-line-height: 2.25rem !default; // h4
+$font-5-line-height: 1.75rem !default; // h5
+$font-6-line-height: 1.25rem !default; // h6
+$font-7-line-height: 1.041666rem !default;
+$font-8-line-height: .833333rem !default;
+$font-9-line-height: .625rem !default;

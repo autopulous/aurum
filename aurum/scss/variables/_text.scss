@@ -1,0 +1,16 @@
+@import "font";
+@import "gaps";
+@import "palette/grayscale";
+
+$text-top-padding: 0 !default;
+$text-left-padding: 0 !default;
+$text-bottom-padding: 0 !default;
+$text-right-padding: 0 !default;
+
+$text-top-margin: 0 !default;
+$text-left-margin: 0 !default;
+$text-bottom-margin: $gap-medium !default;
+$text-right-margin: 0 !default;
+
+$text-color: $black !default;
+$text-background-color: $white !default;

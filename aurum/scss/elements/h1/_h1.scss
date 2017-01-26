@@ -1,0 +1,10 @@
+@import "_variables";
+
+h1 {
+  display: $h1-display;
+  padding: $h1-padding;
+  margin: $h1-margin;
+  font-size: $h1-font-size;
+  font-weight: $h1-font-weight;
+  line-height: $h1-line-height;
+}

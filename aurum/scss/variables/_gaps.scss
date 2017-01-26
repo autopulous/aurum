@@ -1,0 +1,10 @@
+// gap sizes primarily used for margin and padding of structural elements (e.g. <div>, <span>)
+
+$gap-none: 0 !default;
+$gap-smallest: .125rem !default;
+$gap-smaller: .25rem !default;
+$gap-small: .5rem !default;
+$gap-medium: 1rem !default;
+$gap-large: 2rem !default;
+$gap-larger: 4rem !default;
+$gap-largest: 8rem !default;
