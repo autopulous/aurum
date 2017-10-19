@@ -30,7 +30,7 @@ __Example:__ styling specific to the HTML `<body>` element
        
 ##### _variables.scss
        
-```css
+```scss
 $body-width: 100% !default;
 $body-height: 100% !default;
 
@@ -48,7 +48,7 @@ $body-padding: $body-padding-top $body-padding-right $body-padding-bottom $body-
 ```
 ##### _body.scss
 
-```css
+```scss
 @import "_variables";
 
 body {
@@ -66,7 +66,7 @@ __Example:__ Aurum core variables used to set padding and margin attribute value
 
 ##### _gaps.scss
        
-```css
+```scss
 $gap-none: 0 !default;
 $gap-smallest: .125rem !default;
 $gap-smaller: .25rem !default;
@@ -79,7 +79,7 @@ $gap-largest: 8rem !default;
 
 ##### _margin.scss _(snippet)_
 
-```css
+```scss
 @import "../variables/_gaps";
 
 ...
@@ -112,7 +112,7 @@ HTML attribute component style files provide definitions used to set single or r
   
 __Example:__ set the CSS `display` and `margin` attributes on nested `<div>` elements
   
-```css
+```scss
 <div au="flex margin-vertical-medium">
   <div au="inline-flex margin-top-smaller">Some text</div>
   <div au="inline-flex margin-bottom-smaler">Some more</div>
@@ -167,7 +167,7 @@ Angular 2+ components follow the `_variable.scss`, `_xxx.scss` naming pattern wh
 To facilitate and promote component style sharing best practices dictate that imported variables always be assigned to component specific variables prior to use as attribute values.
  
 __Example:__ set the `manager.ts` component `<button>` variables from Aurum base and `card` component variables
-```css
+```scss
 @import '../../../../../core/styles/variables/_duration';
 @import '../../../../../core/styles/variables/_font';
 @import '../../../../../core/styles/variables/palette/_brand.primary';
