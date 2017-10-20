@@ -1,0 +1,36 @@
+@import "../../variables/palette/_grayscale";
+@import "../../variables/_border";
+@import "../../variables/_duration";
+@import "../../variables/_font";
+@import "../../variables/_text";
+
+$input-display: block !default;
+
+$input-padding-top: 12px !default;
+$input-padding-right: 10px !default;
+$input-padding-bottom: 12px !default;
+$input-padding-left: 10px !default;
+$input-padding: $input-padding-top $input-padding-right $input-padding-bottom $input-padding-left !default;
+
+$input-border: $border !default;
+
+$input-margin-top: 0 !default;
+$input-margin-right: 0 !default;
+$input-margin-bottom: 0 !default;
+$input-margin-left: 0 !default;
+$input-margin: $input-margin-top $input-margin-right $input-margin-bottom $input-margin-left !default;
+
+$input-font-size: $font-6-size !default;
+$input-font-weight: 400 !default;
+$input-line-height: $font-6-line-height !default;
+
+$input-min-width: 320px !default;
+
+$input-transition: color $duration-medium !default;
+$input-color: $text-color !default;
+
+$input-background-color: $text-background-color !default;
+$input-disabled-background-color: $grey-lightest !default;
+
+$input-placeholder-color: $gray-lighter !default;
+$input-placeholder-focus-color: $gray-darkest !default;

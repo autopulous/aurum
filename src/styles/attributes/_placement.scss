@@ -1,0 +1,46 @@
+// to use attribute styles must be individually activated at the <html> (or deeper) level within the document
+//
+// e.g. to style elements with the `top` placement attribute
+//
+// <html au-styles="top">
+//   <div>
+//     <div top>
+//
+// alternatively the `top` attribute can be used directly (without activation)
+//
+// e.g. to achieve the same styling effect as the previous example
+//
+// <html>
+//   <div>
+//     <div au="top">
+
+[au~="bottom-center"], [au-styles~="bottom-center"] [bottom-center] {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+[au~="center"], [au-styles~="center"] [center] {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+[au~="top"], [au-styles~="top"] [top] {
+  top: 0;
+}
+
+[au~="top-right"], [au-styles~="top-right"] [top-right] {
+  top: 0;
+  right: 0;
+}
+
+[au~="top-left"], [au-styles~="top-left"] [top-left] {
+  top: 0;
+  left: 0;
+}
+
+[au~="top-center"], [au-styles~="top-center"] [top-center] {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
