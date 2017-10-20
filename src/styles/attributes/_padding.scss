@@ -18,33 +18,33 @@
 
 // generate padding, top, left, bottom, right, vertical and horizontal selectors
 
-@mixin padding-generator($name-suffix, $units) {
-  [au~=padding#{$name-suffix}], [au-styles~=padding#{$name-suffix}] [padding#{$name-suffix}] {
+@mixin padding-generator($suffix, $units) {
+  [au~=padding#{$suffix}], [au-styles~=padding#{$suffix}] [padding#{$suffix}] {
     padding: $units;
   }
 
-  [au~=padding-top#{$name-suffix}], [au-styles~=padding-top#{$name-suffix}] [padding-top#{$name-suffix}] {
+  [au~=padding-top#{$suffix}], [au-styles~=padding-top#{$suffix}] [padding-top#{$suffix}] {
     padding-top: $units;
   }
 
-  [au~=padding-left#{$name-suffix}], [au-styles~=padding-left#{$name-suffix}] [padding-left#{$name-suffix}] {
+  [au~=padding-left#{$suffix}], [au-styles~=padding-left#{$suffix}] [padding-left#{$suffix}] {
     padding-left: $units;
   }
 
-  [au~=padding-bottom#{$name-suffix}], [au-styles~=padding-bottom#{$name-suffix}] [padding-bottom#{$name-suffix}] {
+  [au~=padding-bottom#{$suffix}], [au-styles~=padding-bottom#{$suffix}] [padding-bottom#{$suffix}] {
     padding-bottom: $units;
   }
 
-  [au~=padding-right#{$name-suffix}], [au-styles~=padding-right#{$name-suffix}] [padding-right#{$name-suffix}] {
+  [au~=padding-right#{$suffix}], [au-styles~=padding-right#{$suffix}] [padding-right#{$suffix}] {
     padding-right: $units;
   }
 
-  [au~=padding-vertical#{$name-suffix}], [au-styles~=padding-vertical#{$name-suffix}] [padding-vertical#{$name-suffix}] {
+  [au~=padding-vertical#{$suffix}], [au-styles~=padding-vertical#{$suffix}] [padding-vertical#{$suffix}] {
     padding-top: $units;
     padding-bottom: $units;
   }
 
-  [au~=padding-horizontal#{$name-suffix}], [au-styles~=padding-horizontal#{$name-suffix}] [padding-horizontal#{$name-suffix}] {
+  [au~=padding-horizontal#{$suffix}], [au-styles~=padding-horizontal#{$suffix}] [padding-horizontal#{$suffix}] {
     padding-right: $units;
     padding-left: $units;
   }

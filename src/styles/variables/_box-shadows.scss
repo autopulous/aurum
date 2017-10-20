@@ -20,4 +20,4 @@ $box-shadow-medium: 4px 4px 12px rgba($box-shadow-color, $opacity-medium) !defau
 $box-shadow-large: 5px 5px 15px rgba($box-shadow-color, $opacity-weak) !default;
 $box-shadow-larger: 6px 6px 18px rgba($box-shadow-color, $opacity-weaker) !default;
 $box-shadow-largest: 7px 7px 21px rgba($box-shadow-color, $opacity-weakest) !default;
-$box-shadows: '', $box-shadow-smallest, $box-shadow-smaller, $box-shadow-small, $box-shadow-medium, $box-shadow-large, $box-shadow-larger, $box-shadow-largest;
+$box-shadow-list: '', $box-shadow-smallest, $box-shadow-smaller, $box-shadow-small, $box-shadow-medium, $box-shadow-large, $box-shadow-larger, $box-shadow-largest;

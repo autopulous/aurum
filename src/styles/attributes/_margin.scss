@@ -18,33 +18,33 @@
 
 // generate margin, top, left, bottom, right, vertical and horizontal selectors
 
-@mixin margin-generator($name-suffix, $units) {
-  [au~=margin#{$name-suffix}], [au-styles~=margin#{$name-suffix}] [margin#{$name-suffix}] {
+@mixin margin-generator($suffix, $units) {
+  [au~=margin#{$suffix}], [au-styles~=margin#{$suffix}] [margin#{$suffix}] {
     margin: $units;
   }
 
-  [au~=margin-top#{$name-suffix}], [au-styles~=margin-top#{$name-suffix}] [margin-top#{$name-suffix}] {
+  [au~=margin-top#{$suffix}], [au-styles~=margin-top#{$suffix}] [margin-top#{$suffix}] {
     margin-top: $units;
   }
 
-  [au~=margin-left#{$name-suffix}], [au-styles~=margin-left#{$name-suffix}] [margin-left#{$name-suffix}] {
+  [au~=margin-left#{$suffix}], [au-styles~=margin-left#{$suffix}] [margin-left#{$suffix}] {
     margin-left: $units;
   }
 
-  [au~=margin-bottom#{$name-suffix}], [au-styles~=margin-bottom#{$name-suffix}] [margin-bottom#{$name-suffix}] {
+  [au~=margin-bottom#{$suffix}], [au-styles~=margin-bottom#{$suffix}] [margin-bottom#{$suffix}] {
     margin-bottom: $units;
   }
 
-  [au~=margin-right#{$name-suffix}], [au-styles~=margin-right#{$name-suffix}] [margin-right#{$name-suffix}] {
+  [au~=margin-right#{$suffix}], [au-styles~=margin-right#{$suffix}] [margin-right#{$suffix}] {
     margin-right: $units;
   }
 
-  [au~=margin-vertical#{$name-suffix}], [au-styles~=margin-vertical#{$name-suffix}] [margin-vertical#{$name-suffix}] {
+  [au~=margin-vertical#{$suffix}], [au-styles~=margin-vertical#{$suffix}] [margin-vertical#{$suffix}] {
     margin-top: $units;
     margin-bottom: $units;
   }
 
-  [au~=margin-horizontal#{$name-suffix}], [au-styles~=margin-horizontal#{$name-suffix}] [margin-horizontal#{$name-suffix}] {
+  [au~=margin-horizontal#{$suffix}], [au-styles~=margin-horizontal#{$suffix}] [margin-horizontal#{$suffix}] {
     margin-right: $units;
     margin-left: $units;
   }

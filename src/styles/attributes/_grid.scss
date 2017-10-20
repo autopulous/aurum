@@ -6,12 +6,18 @@
 //
 // @include the grid_generator() mixin passing the list of grid sizes needed for your application
 //
-// see: _width.scss and _height.scss for instructions related to the use of the generated grid size selectors
+// see: _width.scss and _height.scss for instructions about the use of the generated grid size selectors
+// see: _left.scss, and _right.scss for instructions about the use of the generated grid position selectors
+// see: _translateX.scss, and _translateY.scss for instructions about the use of the generated grid translation selectors
 
 @import "width";
 @import "height";
+@import "left";
+@import "right";
+@import "animations/translateX";
+@import "animations/translateY";
 
-@mixin grid-generator($grid-list: 1 2 3 4 5 6 7 8 10 12 16) {
+@mixin grid-generator($grid-list: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20) {
   @each $grid in $grid-list {
     @for $column from 0 through $grid {
       @include width-generator($column, $grid);
@@ -22,6 +28,26 @@
     @for $row from 0 through $grid {
       @include height-generator($row, $grid);
     }
+  }
+
+  @each $grid in $grid-list {
+    @for $left from 0 through $grid {
+      @include left-generator($left, $grid);
+    }
+  }
+
+  @each $grid in $grid-list {
+    @for $right from 0 through $grid {
+      @include right-generator($right, $grid);
+    }
+  }
+
+  @for $x from 1 through max($grid-list...) {
+    @include translateX-animation-generator($x);
+  }
+
+  @for $y from 1 through max($grid-list...) {
+    @include translateY-animation-generator($y);
   }
 }
 

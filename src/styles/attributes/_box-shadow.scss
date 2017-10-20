@@ -2,7 +2,7 @@
 
 @for $g from 1 through length($box-glow-list) {
   @for $i from 1 through length($box-inset-list) {
-    @for $s from 1 through length($box-shadows) {
+    @for $s from 1 through length($box-shadow-list) {
       @if 1 < $g or 1 < $i or 1 < $s {
         $selector: '';
 
@@ -38,9 +38,9 @@
 
         @if 1 < $s {
           @if 1 < $g or 1 < $i {
-            $box-shadow: $box-shadow, nth($box-shadows, $s);
+            $box-shadow: $box-shadow, nth($box-shadow-list, $s);
           } @else {
-            $box-shadow: nth($box-shadows, $s);
+            $box-shadow: nth($box-shadow-list, $s);
           }
         }
 
