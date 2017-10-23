@@ -4,8 +4,7 @@ import {Component} from '@angular/core';
   selector: 'au-grid',
   templateUrl: './grid.component.html',
   styleUrls: ['./grid.component.scss'],
-  // assign Aurum style attributes
-  // host: {'au': 'p centered'}
-  host: {'p': '', 'centered': ''} // must have turned on Aurum centered and p style attribute via <html au-styles="centered p">
+  host: {'au': 'block centered'} // assign block and centered au style attributes
+  // host: {'block': '', 'centered': ''} // when block and centered are activated via <html au-styles="block centered">
 })
 export class GridComponent {}
