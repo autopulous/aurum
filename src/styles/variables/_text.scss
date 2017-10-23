@@ -2,15 +2,15 @@
 @import "gaps";
 @import "palette/grayscale";
 
-$text-top-padding: 0 !default;
-$text-left-padding: 0 !default;
-$text-bottom-padding: 0 !default;
-$text-right-padding: 0 !default;
+$text-top-padding: $gap-none !default;
+$text-left-padding: $gap-none !default;
+$text-bottom-padding: $gap-none !default;
+$text-right-padding: $gap-none !default;
 
-$text-top-margin: 0 !default;
-$text-left-margin: 0 !default;
-$text-bottom-margin: $gap-medium !default;
-$text-right-margin: 0 !default;
+$text-top-margin: $gap-none !default;
+$text-left-margin: $gap-none !default;
+$text-bottom-margin: $gap-none !default;
+$text-right-margin: $gap-none !default;
 
 $text-color: $black !default;
 $text-background-color: $white !default;

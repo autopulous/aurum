@@ -1,0 +1,49 @@
+@import "../../variables/palette/accent";
+
+[au~=accent-info-light], [au-styles~=palette] [accent-info-light] {
+  color: $accent-info-light;
+}
+
+[au~=accent-info], [au-styles~=palette] [accent-info] {
+  color: $accent-info;
+}
+
+[au~=accent-info-dark], [au-styles~=palette] [accent-info-dark] {
+  color: $accent-info-dark;
+}
+
+[au~=accent-success-light], [au-styles~=palette] [accent-success-light] {
+  color: $accent-success-light;
+}
+
+[au~=accent-success], [au-styles~=palette] [accent-success] {
+  color: $accent-success;
+}
+
+[au~=accent-success-dark], [au-styles~=palette] [accent-success-dark] {
+  color: $accent-success-dark;
+}
+
+[au~=accent-warning-light], [au-styles~=palette] [accent-warning-light] {
+  color: $accent-warning-light;
+}
+
+[au~=accent-warning], [au-styles~=palette] [accent-warning] {
+  color: $accent-warning;
+}
+
+[au~=accent-warning-dark], [au-styles~=palette] [accent-warning-dark] {
+  color: $accent-warning-dark;
+}
+
+[au~=accent-error-light], [au-styles~=palette] [accent-error-light] {
+  color: $accent-error-light;
+}
+
+[au~=accent-error], [au-styles~=palette] [accent-error] {
+  color: $accent-error;
+}
+
+[au~=accent-error-dark], [au-styles~=palette] [accent-error-dark] {
+  color: $accent-error-dark;
+}

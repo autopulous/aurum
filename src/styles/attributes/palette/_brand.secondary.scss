@@ -1,0 +1,30 @@
+@import "../../variables/palette/brand.secondary";
+
+[au~=brand-secondary-lightest], [au-styles~=palette] [brand-secondary-lightest] {
+  color: $brand-secondary-lightest;
+}
+
+[au~=brand-secondary-lighter], [au-styles~=palette] [brand-secondary-lighter] {
+  color: $brand-secondary-lighter;
+}
+
+[au~=brand-secondary-light], [au-styles~=palette] [brand-secondary-light] {
+  color: $brand-secondary-light;
+}
+
+[au~=brand-secondary], [au-styles~=palette] [brand-secondary] {
+  color: $brand-secondary;
+}
+
+[au~=brand-secondary-dark], [au-styles~=palette] [brand-secondary-dark] {
+  color: $brand-secondary-dark;
+}
+
+[au~=brand-secondary-darker], [au-styles~=palette] [brand-secondary-darker] {
+  color: $brand-secondary-darker;
+}
+
+[au~=brand-secondary-darkest], [au-styles~=palette] [brand-secondary-darkest] {
+  color: $brand-secondary-darkest;
+}
+

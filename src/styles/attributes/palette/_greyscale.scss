@@ -1,0 +1,41 @@
+@import "../../variables/palette/greyscale";
+
+[au~=grey-lightest], [au-styles~=palette] [grey-lightest] {
+  color: $grey-lightest;
+}
+
+[au~=grey-lighter], [au-styles~=palette] [grey-lighter] {
+  color: $grey-lighter;
+}
+
+[au~=grey-light], [au-styles~=palette] [grey-light] {
+  color: $grey-light;
+}
+
+[au~=grey-medium], [au-styles~=palette] [grey-medium] {
+  color: $grey-medium;
+}
+
+[au~=grey-dark], [au-styles~=palette] [grey-dark] {
+  color: $grey-dark;
+}
+
+[au~=grey-darker], [au-styles~=palette] [grey-darker] {
+  color: $grey-darker;
+}
+
+[au~=grey-darkest], [au-styles~=palette] [grey-darkest] {
+  color: $grey-darkest;
+}
+
+[au~=white], [au-styles~=palette] [white] {
+  color: $white;
+}
+
+[au~=slate], [au-styles~=palette] [slate] {
+  color: $slate;
+}
+
+[au~=black], [au-styles~=palette] [black] {
+  color: $black;
+}

@@ -1,0 +1,29 @@
+@import "../../variables/palette/brand.primary";
+
+[au~=brand-primary-lightest], [au-styles~=palette] [brand-primary-lightest] {
+  color: $brand-primary-lightest;
+}
+
+[au~=brand-primary-lighter], [au-styles~=palette] [brand-primary-lighter] {
+  color: $brand-primary-lighter;
+}
+
+[au~=brand-primary-light], [au-styles~=palette] [brand-primary-light] {
+  color: $brand-primary-light;
+}
+
+[au~=brand-primary], [au-styles~=palette] [brand-primary] {
+  color: $brand-primary;
+}
+
+[au~=brand-primary-dark], [au-styles~=palette] [brand-primary-dark] {
+  color: $brand-primary-dark;
+}
+
+[au~=brand-primary-darker], [au-styles~=palette] [brand-primary-darker] {
+  color: $brand-primary-darker;
+}
+
+[au~=brand-primary-darkest], [au-styles~=palette] [brand-primary-darkest] {
+  color: $brand-primary-darkest;
+}
