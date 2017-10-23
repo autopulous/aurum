@@ -1,21 +1,21 @@
 // to use attribute styles must be individually activated at the <html> (or deeper) level within the document
 //
-// e.g. to style elements with the `grid-9` grid style attribute
+// e.g. to style elements with the `grid-8` grid style attribute
 //
-// <html au-styles="grid-9">
+// <html au-styles="grid-8">
 //   <div>
-//     <div width-4-9>
+//     <div width-4-8>
 //
-// alternatively the `width-4-9` attribute can be used directly (without activation)
+// alternatively the `width-4-8` attribute can be used directly (without activation)
 //
 // e.g. to achieve the same styling effect as the previous example
 //
 // <html>
 //   <div>
-//     <div au="width-4-9">
+//     <div au="width-4-8">
 
 @mixin width-generator($numerator, $denominator) {
-  [au~="width-#{$numerator}-#{$denominator}"], [au-styles~="grid-#{$denominator}"] [width-#{$numerator}-#{$denominator}] {
+  [au~=width-#{$numerator}-#{$denominator}], [au-styles~=grid-#{$denominator}] [width-#{$numerator}-#{$denominator}] {
     @if (0 == $numerator) {
       width: 0;
     } @else {

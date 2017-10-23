@@ -7,15 +7,15 @@
         $selector: '';
 
         @if 1 < $g {
-          $selector: #{'[au~="glow"]'};
+          $selector: #{'[au~=glow]'};
         } @else {
-          $selector: #{':not([au~="glow"])'};
+          $selector: #{':not([au~=glow])'};
         }
 
         @if 1 < $i {
-          $selector: $selector#{'[au~="inset"]'};
+          $selector: $selector#{'[au~=inset]'};
         } @else {
-          $selector: $selector#{':not([au~="inset"])'};
+          $selector: $selector#{':not([au~=inset])'};
         }
 
         @if 1 < $s {

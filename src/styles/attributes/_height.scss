@@ -1,21 +1,21 @@
 // to use attribute styles must be individually activated at the <html> (or deeper) level within the document
 //
-// e.g. to style elements with the `grid-10` grid style attribute
+// e.g. to style elements with the `grid-8` grid style attribute
 //
-// <html au-styles="grid-10">
+// <html au-styles="grid-8">
 //   <div>
-//     <div height-1-10>
+//     <div height-1-8>
 //
-// alternatively the `height-1-10` attribute can be used directly (without activation)
+// alternatively the `height-1-8` attribute can be used directly (without activation)
 //
 // e.g. to achieve the same styling effect as the previous example
 //
 // <html>
 //   <div>
-//     <div au="height-1-10">
+//     <div au="height-1-8">
 
 @mixin height-generator($numerator, $denominator) {
-  [au~="height-#{$numerator}-#{$denominator}"], [au-styles~="grid-#{$denominator}"] [height-#{$numerator}-#{$denominator}] {
+  [au~=height-#{$numerator}-#{$denominator}], [au-styles~=grid-#{$denominator}] [height-#{$numerator}-#{$denominator}] {
     @if (0 == $numerator) {
       height: 0;
     } @else {

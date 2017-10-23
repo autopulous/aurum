@@ -1,5 +1,5 @@
 @mixin left-generator($numerator, $denominator) {
-  [au~="left-#{$numerator}-#{$denominator}"] {
+  [au~=left-#{$numerator}-#{$denominator}] {
     @if (0 == $numerator) {
       left: 0;
     } @else {

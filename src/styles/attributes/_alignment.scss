@@ -17,13 +17,13 @@
 
 // Block Alignment
 
-[au~="distributed"], [au-styles~="distributed"] [distributed] {
+[au~=distributed], [au-styles~=distributed] [distributed] {
   display: flex;
   justify-content: space-between;
 }
 
 // Content Alignment
 
-[au~="centered"], [au-styles~="centered"] [centered] {
+[au~=centered], [au-styles~=centered] [centered] {
   text-align: center;
 }

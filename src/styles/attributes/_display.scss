@@ -2,7 +2,7 @@
 //
 // e.g. to style elements with the `inline-block` display attribute
 //
-// <html au-styles="inline-block">
+// <html au-styles=inline-block>
 //   <div>
 //     <div inline-block>
 //
@@ -12,72 +12,72 @@
 //
 // <html>
 //   <div>
-//     <div au="inline-block">
+//     <div au=inline-block>
 
-[au~="block"], [au-styles~="block"] [block] {
+[au~=block], [au-styles~=block] [block] {
   display: block;
 }
 
-[au~="flex"], [au-styles~="flex"] [flex] {
+[au~=flex], [au-styles~=flex] [flex] {
   display: flex;
 }
 
-[au~="inline"], [au-styles~="inline"] [inline] {
+[au~=inline], [au-styles~=inline] [inline] {
   display: inline;
 }
 
-[au~="inline-block"], [au-styles~="inline-block"] [inline-block] {
+[au~=inline-block], [au-styles~=inline-block] [inline-block] {
   display: inline-block;
 }
 
-[au~="inline-flex"], [au-styles~="inline-flex"] [inline-flex] {
+[au~=inline-flex], [au-styles~=inline-flex] [inline-flex] {
   display: inline-flex;
 }
 
-[au~="inline-table"], [au-styles~="inline-table"] [inline-table] {
+[au~=inline-table], [au-styles~=inline-table] [inline-table] {
   display: inline-table;
 }
 
-[au~="list-item"], [au-styles~="list-item"] [list-item] {
+[au~=list-item], [au-styles~=list-item] [list-item] {
   display: list-item;
 }
 
-[au~="none"], [au~="hidden"], [au-styles~="hidden"] [hidden] {
+[au~=none], [au~=hidden], [au-styles~=hidden] [hidden] {
   display: none;
 }
 
-[au~="table"], [au-styles~="table"] [table] {
+[au~=table], [au-styles~=table] [table] {
   display: table;
 }
 
-[au~="table-caption"], [au-styles~="table-caption"] [table-caption] {
+[au~=table-caption], [au-styles~=table-caption] [table-caption] {
   display: table-caption;
 }
 
-[au~="table-cell"], [au-styles~="table-cell"] [table-cell] {
+[au~=table-cell], [au-styles~=table-cell] [table-cell] {
   display: table-cell;
 }
 
-[au~="table-column"], [au-styles~="table-column"] [table-column] {
+[au~=table-column], [au-styles~=table-column] [table-column] {
   display: table-column;
 }
 
-[au~="table-column-group"], [au-styles~="table-column-group"] [table-column-group] {
+[au~=table-column-group], [au-styles~=table-column-group] [table-column-group] {
   display: table-column-group;
 }
 
-[au~="table-footer-group"], [au-styles~="table-footer-group"] [table-footer-group] {
+[au~=table-footer-group], [au-styles~=table-footer-group] [table-footer-group] {
   display: table-footer-group;
 }
 
-[au~="table-header-group"], [au-styles~="table-header-group"] [table-header-group] {
+[au~=table-header-group], [au-styles~=table-header-group] [table-header-group] {
   display: table-header-group;
 }
 
-[au~="table-row"], [au-styles~="table-row"] [table-row] {
+[au~=table-row], [au-styles~=table-row] [table-row] {
   display: table-row;
 }
 
-[au~="table-row-group"], [au-styles~="table-row-group"] [table-row-group] {
+[au~=table-row-group], [au-styles~=table-row-group] [table-row-group] {
   display: table-row-group;
 }

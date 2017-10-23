@@ -1,6 +1,6 @@
 @import "_variables";
 
-p {
+p, [au~=p], [au-styles~=p] [p] {
   display: $p-display;
   padding: $p-padding;
   margin: $p-margin;

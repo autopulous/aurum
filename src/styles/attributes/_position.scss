@@ -2,7 +2,7 @@
 //
 // e.g. to style elements with the `relative` position attribute
 //
-// <html au-styles="relative">
+// <html au-styles=relative>
 //   <div>
 //     <div relative>
 //
@@ -14,18 +14,18 @@
 //   <div>
 //     <div au="relative">
 
-[au~="absolute"], [au-styles~="absolute"] [absolute] {
+[au~=absolute], [au-styles~=absolute] [absolute] {
   position: absolute;
 }
 
-[au~="fixed"], [au-styles~="fixed"] [fixed] {
+[au~=fixed], [au-styles~=fixed] [fixed] {
   position: fixed;
 }
 
-[au~="relative"], [au-styles~="relative"] [relative] {
+[au~=relative], [au-styles~=relative] [relative] {
   position: relative;
 }
 
-[au~="static"], [au-styles~="static"] [static] {
+[au~=static], [au-styles~=static] [static] {
   position: static;
 }
