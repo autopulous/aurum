@@ -1,8 +1,17 @@
 @import 'palette/accent';
-@import 'palette/greyscale';
+@import 'palette/grey';
 
-$border: 1px solid $grey-lighter !default;
-$border-information: 1px solid $accent-info !default;
-$border-success: 1px solid $accent-success !default;
-$border-warning: 1px solid $accent-warning !default;
-$border-error: 1px solid $accent-error !default;
+$border-none: 0 !default;
+$border-smallest: .25px !default;
+$border-smaller: .5px !default;
+$border-small: .75px !default;
+$border-medium: 1px !default;
+$border-large: 1.5px !default;
+$border-larger: 2px !default;
+$border-largest: 2.5px !default;
+
+$border: $border-medium solid $grey-lighter !default;
+$border-information: $border-medium solid $accent-info !default;
+$border-success: $border-medium solid $accent-success !default;
+$border-warning: $border-medium solid $accent-warning !default;
+$border-error: $border-medium solid $accent-error !default;

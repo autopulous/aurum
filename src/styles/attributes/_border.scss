@@ -1,0 +1,33 @@
+@import "../variables/_border";
+
+[au~=border-width-none], [au-styles~=border-width] [border-width-none] {
+  border: $border-none none;
+}
+
+[au~=border-width-smallest], [au-styles~=border-width] [border-width-smallest] {
+  border: $border-smallest solid;
+}
+
+[au~=border-width-smaller], [au-styles~=border-width] [border-width-smaller] {
+  border: $border-smaller solid;
+}
+
+[au~=border-width-small], [au-styles~=border-width] [border-width-small] {
+  border: $border-small solid;
+}
+
+[au~=border-width-medium], [au-styles~=border-width] [border-width-medium] {
+  border: $border-medium solid;
+}
+
+[au~=border-width-large], [au-styles~=border-width] [border-width-large] {
+  border: $border-large solid;
+}
+
+[au~=border-width-larger], [au-styles~=border-width] [border-width-larger] {
+  border: $border-larger solid;
+}
+
+[au~=border-width-largest], [au-styles~=border-width] [border-width-largest] {
+  border: $border-largest solid;
+}

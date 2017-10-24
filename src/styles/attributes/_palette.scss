@@ -1,1 +1,85 @@
-@import 'palette/index';
+@import '../variables/_palette';
+
+$palette: (
+  gray-lightest: $gray-lightest,
+  grey-lightest: $grey-lightest,
+  gray-lighter: $gray-lighter,
+  grey-lighter: $grey-lighter,
+  gray-light: $gray-light,
+  grey-light: $grey-light,
+  gray-medium: $gray-medium,
+  grey-medium: $grey-medium,
+  gray-dark: $gray-dark,
+  grey-dark: $grey-dark,
+  gray-darker: $gray-darker,
+  grey-darker: $grey-darker,
+  gray-darkest: $gray-darkest,
+  grey-darkest: $grey-darkest,
+
+  white: $white,
+  slate: $slate,
+  black: $black,
+
+  accent-info-light: $accent-info-light,
+  accent-info: $accent-info,
+  accent-info-dark: $accent-info-dark,
+  accent-success-light: $accent-success-light,
+  accent-success: $accent-success,
+  accent-success-dark: $accent-success-dark,
+  accent-warning-light: $accent-warning-light,
+  accent-warning: $accent-warning,
+  accent-warning-dark: $accent-warning-dark,
+  accent-error-light: $accent-error-light,
+  accent-error: $accent-error,
+  accent-error-dark: $accent-error-dark,
+
+  brand-primary-lightest: $brand-primary-lightest,
+  brand-primary-lighter: $brand-primary-lighter,
+  brand-primary-light: $brand-primary-light,
+  brand-primary: $brand-primary,
+  brand-primary-dark: $brand-primary-dark,
+  brand-primary-darker: $brand-primary-darker,
+  brand-primary-darkest: $brand-primary-darkest,
+
+  brand-secondary-lightest: $brand-secondary-lightest,
+  brand-secondary-lighter: $brand-secondary-lighter,
+  brand-secondary-light: $brand-secondary-light,
+  brand-secondary: $brand-secondary,
+  brand-secondary-dark: $brand-secondary-dark,
+  brand-secondary-darker: $brand-secondary-darker,
+  brand-secondary-darkers: $brand-secondary-darker,
+  brand-secondary-darkest: $brand-secondary-darkest
+);
+
+@mixin color-generator($color-name-list) {
+  // @debug $color-name-list;
+
+  @each $color-name in $color-name-list {
+    $color: map-get($palette, $color-name);
+
+    $color-color-name: color-#{$color-name};
+    [au~=#{$color-color-name}], [au-styles~=palette] [#{$color-color-name}] {
+      color: $color;
+    }
+
+    $background-color-name: background-color-#{$color-name};
+    [au~=#{$background-color-name}], [au-styles~=palette] [#{$background-color-name}] {
+      background-color: $color;
+    }
+
+    $border-color-name: border-color-#{$color-name};
+    [au~=#{$border-color-name}], [au-styles~=palette] [#{$border-color-name}] {
+      border-color: $color;
+    }
+
+    // @debug $color $color-color-name $background-color-name $border-color-name;
+  }
+}
+
+$palette-color-name-list: ();
+
+@each $palette-color-name, $value in $palette {
+  $palette-color-name-list: append($palette-color-name-list, $palette-color-name)
+}
+
+@include color-generator($palette-color-name-list);
