@@ -1,0 +1,18 @@
+@import "../../variables/_text";
+
+$div-display: block !default;
+
+$div-font-weight: 400 !default;
+$div-font-size: $font-6-size !default;
+
+$div-top-padding: $text-top-padding !default;
+$div-left-padding: $text-left-padding !default;
+$div-bottom-padding: $text-bottom-padding !default;
+$div-right-padding: $text-right-padding !default;
+$div-padding: $div-top-padding $div-left-padding $div-bottom-padding $div-right-padding !default;
+
+$div-top-margin: $text-top-margin !default;
+$div-left-margin: $text-left-margin !default;
+$div-bottom-margin: $text-bottom-margin !default;
+$div-right-margin: $text-right-margin !default;
+$div-margin: $div-top-margin $div-left-margin $div-bottom-margin $div-right-margin !default;

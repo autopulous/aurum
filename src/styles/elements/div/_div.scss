@@ -1,0 +1,9 @@
+@import "_variables";
+
+div, [au~=div], [au-styles~=div] [div] {
+  display: $div-display;
+  padding: $div-padding;
+  margin: $div-margin;
+  font-size: $div-font-size;
+  font-weight: $div-font-weight;
+}
