@@ -1,0 +1,18 @@
+@import "../../variables/_text";
+
+$span-display: inline-block !default;
+
+$span-font-weight: 400 !default;
+$span-font-size: $font-6-size !default;
+
+$span-top-padding: $text-top-padding !default;
+$span-left-padding: $text-left-padding !default;
+$span-bottom-padding: $text-bottom-padding !default;
+$span-right-padding: $text-right-padding !default;
+$span-padding: $span-top-padding $span-left-padding $span-bottom-padding $span-right-padding !default;
+
+$span-top-margin: $text-top-margin !default;
+$span-left-margin: $text-left-margin !default;
+$span-bottom-margin: $text-bottom-margin !default;
+$span-right-margin: $text-right-margin !default;
+$span-margin: $span-top-margin $span-left-margin $span-bottom-margin $span-right-margin !default;

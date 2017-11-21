@@ -1,0 +1,9 @@
+@import "_variables";
+
+span, [au~=span], [au-styles~=span] [span] {
+  display: $span-display;
+  padding: $span-padding;
+  margin: $span-margin;
+  font-size: $span-font-size;
+  font-weight: $span-font-weight;
+}

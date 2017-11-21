@@ -1,0 +1,39 @@
+// to use attribute styles must be individually activated at the <html> (or deeper) level within the document
+//
+// e.g. to style elements with the `nowrap` display attribute
+//
+// <html au-styles=nowrap>
+//   <div>
+//     <div nowrap>
+//
+// alternatively the `nowrap` attribute can be used directly (without activation)
+//
+// e.g. to achieve the same styling effect as the previous example
+//
+// <html>
+//   <div>
+//     <div au=nowrap>
+
+// Whitespace is collapsed into a single whitespace and text continues on the same line until a <br> element (potentially increasing the width of the containing element)
+
+[au~=nowrap], [au-styles~=nowrap] [nowrap] {
+  white-space: nowrap;
+}
+
+// Whitespace is preserved by the browser, text will only wrap on line breaks. Acts like the HTML <pre> element
+
+[au~=pre], [au-styles~=pre] [pre] {
+  white-space: pre;
+}
+
+// Whitespace is collapsed into a single whitespace, text will wrap when necessary, and on line breaks
+
+[au~=pre-line], [au-styles~=pre-line] [pre-line] {
+  white-space: pre-line;
+}
+
+// Whitespace is preserved by the browser, text will wrap when necessary, and on line breaks
+
+[au~=pre-wrap], [au-styles~=pre-wrap] [pre-wrap] {
+  white-space: pre-wrap;
+}

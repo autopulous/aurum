@@ -1,0 +1,37 @@
+@import "../variables/_background-color";
+
+[au~=background-tile-2]:nth-child(2n+1), [au-styles~=background-tile] [background-tile-2]:nth-child(2n+1) {
+  background-color: $background-color-tile-2-1;
+}
+
+[au~=background-tile-2]:nth-child(2n+0), [au-styles~=background-tile] [background-tile-2]:nth-child(2n+0) {
+  background-color: $background-color-tile-2-2;
+}
+
+[au~=background-tile-3]:nth-child(3n+1), [au-styles~=background-tile] [background-tile-3]:nth-child(3n+1) {
+  background-color: $background-color-tile-3-1;
+}
+
+[au~=background-tile-3]:nth-child(3n+2), [au-styles~=background-tile] [background-tile-3]:nth-child(3n+2) {
+  background-color: $background-color-tile-3-2;
+}
+
+[au~=background-tile-3]:nth-child(3n+0), [au-styles~=background-tile] [background-tile-3]:nth-child(3n+0) {
+  background-color: $background-color-tile-3-3;
+}
+
+[au~=background-tile-4]:nth-child(4n+1), [au-styles~=background-tile] [background-tile-4]:nth-child(4n+1) {
+  background-color: $background-color-tile-4-1;
+}
+
+[au~=background-tile-4]:nth-child(4n+2), [au-styles~=background-tile] [background-tile-4]:nth-child(4n+2) {
+  background-color: $background-color-tile-4-2;
+}
+
+[au~=background-tile-4]:nth-child(4n+3), [au-styles~=background-tile] [background-tile-4]:nth-child(4n+3) {
+  background-color: $background-color-tile-4-3;
+}
+
+[au~=background-tile-4]:nth-child(4n+0), [au-styles~=background-tile] [background-tile-4]:nth-child(4n+0) {
+  background-color: $background-color-tile-4-4;
+}
