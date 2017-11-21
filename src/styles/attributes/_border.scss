@@ -1,33 +1,41 @@
 @import "../variables/_border";
 
 [au~=border-width-none], [au-styles~=border-width] [border-width-none] {
-  border: $border-none none;
+  border-style: none;
+  border-width: $border-none
 }
 
 [au~=border-width-smallest], [au-styles~=border-width] [border-width-smallest] {
-  border: $border-smallest solid;
+  border-style: $border-style;
+  border-width: $border-smallest;
 }
 
 [au~=border-width-smaller], [au-styles~=border-width] [border-width-smaller] {
-  border: $border-smaller solid;
+  border-style: $border-style;
+  border-width: $border-smaller;
 }
 
 [au~=border-width-small], [au-styles~=border-width] [border-width-small] {
-  border: $border-small solid;
+  border-style: $border-style;
+  border-width: $border-small;
 }
 
 [au~=border-width-medium], [au-styles~=border-width] [border-width-medium] {
-  border: $border-medium solid;
+  border-style: $border-style;
+  border-width: $border-medium;
 }
 
 [au~=border-width-large], [au-styles~=border-width] [border-width-large] {
-  border: $border-large solid;
+  border-style: $border-style;
+  border-width: $border-large;
 }
 
 [au~=border-width-larger], [au-styles~=border-width] [border-width-larger] {
-  border: $border-larger solid;
+  border-style: $border-style;
+  border-width: $border-larger;
 }
 
 [au~=border-width-largest], [au-styles~=border-width] [border-width-largest] {
-  border: $border-largest solid;
+  border-style: $border-style;
+  border-width: $border-largest;
 }

@@ -51,7 +51,13 @@ $palette: (
   brand-secondary-darkest: $brand-secondary-darkest
 );
 
-@mixin color-generator($color-name-list) {
+$palette-color-name-list: ();
+
+@each $palette-color-name, $value in $palette {
+  $palette-color-name-list: append($palette-color-name-list, $palette-color-name)
+}
+
+@mixin color-generator($color-name-list: $palette-color-name-list) {
   // @debug $color-name-list;
 
   @each $color-name in $color-name-list {
@@ -76,10 +82,4 @@ $palette: (
   }
 }
 
-$palette-color-name-list: ();
-
-@each $palette-color-name, $value in $palette {
-  $palette-color-name-list: append($palette-color-name-list, $palette-color-name)
-}
-
-@include color-generator($palette-color-name-list);
+@include color-generator();
