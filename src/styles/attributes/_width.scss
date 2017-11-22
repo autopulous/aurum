@@ -23,3 +23,23 @@
     }
   }
 }
+
+@for $pixels from 0 through 10000 {
+  [au~=width-#{$pixels}px], [au-styles~=grid] [width-#{$pixels}px] {
+    @if (0 == $pixels) {
+      width: 0;
+    } @else {
+      width: #{$pixels}px;
+    }
+  }
+}
+
+@for $percent from 0 through 100 {
+  [au~=width-#{$percent}], [au-styles~=grid] [width-#{$percent}] {
+    @if (0 == $percent) {
+      width: 0;
+    } @else {
+      width: #{$percent}#{'%'};
+    }
+  }
+}

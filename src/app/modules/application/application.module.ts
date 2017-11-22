@@ -11,9 +11,9 @@ import {ApplicationComponent} from './application.component';
 @NgModule({
   imports: [
     CommonModule,
+    GridModule,
     AuComponentsModule,
-    AuDirectivesModule,
-    GridModule
+    AuDirectivesModule
   ],
   declarations: [
     ApplicationComponent

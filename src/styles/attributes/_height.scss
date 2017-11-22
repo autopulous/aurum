@@ -23,3 +23,13 @@
     }
   }
 }
+
+@for $pixels from 0 through 10000 {
+  [au~=height-#{$pixels}px], [au-styles~=grid] [height-#{$pixels}px] {
+    @if (0 == $pixels) {
+      height: 0;
+    } @else {
+      height: #{$pixels}px;
+    }
+  }
+}

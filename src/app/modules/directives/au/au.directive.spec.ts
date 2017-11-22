@@ -1,4 +1,4 @@
-import { AuDirective } from './au.directive';
+import {AuDirective} from './au.directive';
 
 describe('AuDirective', () => {
   it('should create an instance', () => {
