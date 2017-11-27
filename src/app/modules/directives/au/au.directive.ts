@@ -35,7 +35,7 @@ export class AuDirective {
   @HostBinding('style.color') color: string;
   @HostBinding('style.background-color') backgroundColor: string;
 
-  public constructor(@Attribute('au') private au: string, @Attribute('style') private style: string) {
+  public constructor(@Attribute('style') private style: string) {
     style.replace(MATCH_ALL_WHITESPACE, EMPTY_STRING).split(STYLE_ATTRIBUTE_SEPARATOR).forEach((attribute: string) => {
       let attributeNameValuePair: string[] = attribute.split(STYLE_ATTRIBUTE_NAME_VALUE_SEPARATOR);
       let attributeName: string = attributeNameValuePair[0];
@@ -44,62 +44,16 @@ export class AuDirective {
       console.log(attributeName);
       console.log(attributeValue);
 
-      if ('color' === attributeName) {
-        this.color = attributeValue;
-      }
-      else if (null !== attributeName.match(SIZABLE_ATTRIBUTE_MATCHER)) {
+      if (null !== attributeName.match(SIZABLE_ATTRIBUTE_MATCHER)) {
         let scalars: string[] = attributeValue.split(RATIO_SEPARATOR);
 
         if (null !== scalars) {
           this[attributeName] = Number(scalars[0]) * 100 / Number(scalars[1]) + '%';
         }
       }
+      else {
+        this[attributeName] = attributeValue;
+      }
     });
-    /*
-        this.au.split(AU_ATTRIBUTE_SEPARATOR).forEach((style: string) => {
-          if (null !== style.match(SIZABLE_ATTRIBUTE_MATCHER)) {
-            let isLeft: boolean = style.startsWith('left');
-            let isRight: boolean = style.startsWith('right');
-            let isWidth: boolean = style.startsWith('width');
-            let isHeight: boolean = style.startsWith('height');
-
-            let text: string[] = style.match(TEXTUAL_SIZE_MATCHER);
-
-            let size: string;
-
-            if (null !== text) {
-              size = text[0];
-            }
-            else {
-              let isPercent: boolean = style.endsWith('%');
-              let isPixel: boolean = style.endsWith('px');
-              let isRem: boolean = style.endsWith('rem');
-              let isEm: boolean = style.endsWith('em');
-
-              let scalars: string[] = style.match(SCALAR_SIZE_MATCHER);
-
-              if (isPercent || isPixel || isRem || isEm) {
-                size = scalars[0] + (isPercent ? '%' : isPixel ? 'px' : isRem ? 'rem' : 'em');
-              }
-              else {
-                size = Number(scalars[0]) * 100 / Number(scalars[1]) + '%';
-              }
-            }
-
-            if (isLeft) {
-              this.left = size;
-            }
-            else if (isRight) {
-              this.right = size;
-            }
-            else if (isWidth) {
-              this.width = size;
-            }
-            else if (isHeight) {
-              this.height = size;
-            }
-          }
-        });
-        */
   }
 }
