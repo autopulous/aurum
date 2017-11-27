@@ -27,13 +27,13 @@ const TEXTUAL_SIZE_MATCHER = /-[a-z]+$/g;
   selector: '[au],[style]'
 })
 export class AuDirective {
-  @HostBinding('style.left') left: string;
-  @HostBinding('style.right') right: string;
-  @HostBinding('style.width') width: string;
-  @HostBinding('style.height') height: string;
+  @HostBinding('style.left') left: string = '';
+  @HostBinding('style.right') right: string = '';
+  @HostBinding('style.width') width: string = '';
+  @HostBinding('style.height') height: string = '';
 
-  @HostBinding('style.color') color: string;
-  @HostBinding('style.background-color') backgroundColor: string;
+  @HostBinding('style.color') color: string = '';
+  @HostBinding('style.background-color') backgroundColor: string = '';
 
   @HostBinding('attr.au') auOut: string;
 
@@ -59,10 +59,19 @@ export class AuDirective {
 
       console.log(attributeName);
       console.log(attributeValue);
+      console.dir(this);
+
+      // attributes that do not have a value are AU classes
+
+      if (undefined === attributeValue) {
+        auClasses = auClasses.concat(attributeName);
+      }
+
+      // write (or rewrite) named style attribute values for which this @Directive has a @HostBinding
 
       // convert sizable ratio attribute values (represented by a pair of scalar values (numerator/denominator)) to percentages
 
-      if (null !== attributeName.match(SIZABLE_ATTRIBUTE_MATCHER)) {
+      else if (null !== attributeName.match(SIZABLE_ATTRIBUTE_MATCHER)) {
         let scalars: string[] = attributeValue.split(RATIO_SEPARATOR);
 
         if (null !== scalars) {
@@ -70,18 +79,10 @@ export class AuDirective {
         }
       }
 
-      // write (or rewrite) named style attribute values for which this @Directive has a @HostBinding
+      // write named non-sizable au attribute values
 
-      else if (undefined !== attributeValue && this.hasOwnProperty(attributeName)) {
+      else if (this.hasOwnProperty(attributeName)) {
         this[attributeName] = attributeValue;
-      }
-
-      // todo: handle cases where legitimate style attributes that aren't handled by this @Directive should be kept / rewritten to the style attribute
-
-      // attributes that do not have a value are AU classes
-
-      else if (undefined !== attributeValue) {
-        auClasses = auClasses.concat(attributeName);
       }
     });
 
